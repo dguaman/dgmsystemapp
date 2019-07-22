@@ -11,95 +11,135 @@
 </head>
 <body>
     <header class="header">
-        
-        <figure class="logo">
-            <img src="images/logo.png" alt="Logo de la Empresa" width="60">
-        </figure>
-        <nav class="menu">
-        <ol>
-            <li>
-                <a class="link" href="#portafolio">Portafolio</a>
-            </li>
-            <li>
-                <a class="link" href="#experiencia">Experiencia</a>
-            </li>
-            <li>
-                <a class="link" href="#contacto">Trabajemos Juntos</a>
-            </li>
-        </ol>
-        </nav>
+        <div class="container">
+            <figure class="logo">
+                <img src="images/logoh.png" alt="Logo de la Empresa" width="200">
+            </figure>
+            <nav class="menu">
+            <ol>
+                <li>
+                    <a class="link" href="#portafolio">Portafolio</a>
+                </li>
+                <li>
+                    <a class="link" href="#experiencia">Experiencia</a>
+                </li>
+                <li>
+                    <a class="link" href="#contacto">Trabajemos Juntos</a>
+                </li>
+            </ol>
+            </nav>
+        </div>
         
     </header>
     <section class="hero">
-        <h1>
-            Hola soy <strong>David Guamán</strong>, diseñador creativo,<br> desarrollador de <strong>aplicaciones, sistemas</strong> y experto <br> en <strong>solucionar problemas</strong> con calidad y rapidez.
-        </h1>
-        <!-- <img src="images/hero.png" width="500" height="400" alt="Imagen principal del sitio"> -->
+        <div class="container">
+            <h1>
+                Hola soy <strong>David Guamán</strong>, diseñador creativo,<br> desarrollador de <strong>aplicaciones, sistemas</strong> y experto <br> en <strong>solucionar problemas</strong> con calidad y rapidez.
+            </h1>
+            <img class="hero-image"  src="images/hero.png" width="400" height="300" alt="Imagen principal del sitio">
+        </div>
     </section>
     <section id="portafolio" class="portafolio">
-        <h2>Portafolio (Proyectos Destacados)</h2>
-        <article class="project">
-            <div class="project-separation">
-                <h3 class="project-title">FUTAPL</h3>
-                <h6 class="project-detail">Aplicación para Campeonatos de fútbol</h6>
-                <p class="project-date"><small><strong>Fecha:</strong> 01/04/2019</small></p>
-                <p class="project-url"><small><strong>Puedes verlo:</strong> www.uniondeportiva.club</small></p>
-                <p class="project-description">Es un aplicativo compuesto por un Portal Web, un Sistema de Administración y una App en Android, que  proporcionará las facilidades necesarias al momento de administrar un campeonato de fútbol, debido a que permiten un control y gestión adecuado de las actividades relacionadas en los encuentros deportivos, puntajes y estadísticas generales y especiales.</p>
-                
-            </div>
-            <figure class="project-imageContainer">
-                <img class="project-image" src="images/futapl.png" alt="Imagen del sistema" width="500">
-            </figure>
-        </article>
-        <article class="project">
-            <div class="project-separation">
-                <h3 class="project-title">FUTAPL</h3>
-                <h6 class="project-detail">Aplicación para Campeonatos de fútbol</h6>
-                <p class="project-date"><small><strong>Fecha:</strong> 01/04/2019</small></p>
-                <p class="project-url"><small><strong>Puedes verlo:</strong> www.uniondeportiva.club</small></p>
-                <p class="project-description">Es un aplicativo compuesto por un Portal Web, un Sistema de Administración y una App en Android, que  proporcionará las facilidades necesarias al momento de administrar un campeonato de fútbol, debido a que permiten un control y gestión adecuado de las actividades relacionadas en los encuentros deportivos, puntajes y estadísticas generales y especiales.</p>
-                
-            </div>
-            <figure class="project-imageContainer">
-                <img class="project-image" src="images/futapl.png" alt="Imagen del sistema" width="500">
-            </figure>
-        </article>
+        <div class="container">
+                <h2>Portafolio (Proyectos Destacados)</h2>
+                <article class="project">
+                    <div class="project-separation">
+                        <h3 class="project-title">FUTAPL</h3>
+                        <h6 class="project-detail">Aplicación para Campeonatos de fútbol</h6>
+                        <p class="project-date"><small><strong>Fecha:</strong> 01/04/2019</small></p>
+                        <p class="project-url"><small><strong>Puedes verlo:</strong> www.uniondeportiva.club</small></p>
+                        <p class="project-description">Es un aplicativo compuesto por un Portal Web, un Sistema de Administración y una App en Android, que  proporcionará las facilidades necesarias al momento de administrar un campeonato de fútbol, debido a que permiten un control y gestión adecuado de las actividades relacionadas en los encuentros deportivos, puntajes y estadísticas generales y especiales.</p>
+                        
+                    </div>
+                    <figure class="project-imageContainer">
+                        <img class="project-image" src="images/futapl.png" alt="Imagen del sistema" width="500">
+                    </figure>
+                </article>
+                <article class="project">
+                    <div class="project-separation">
+                        <h3 class="project-title">MACAPL</h3>
+                        <h6 class="project-detail">Aplicación para servicio mecánico automotriz</h6>
+                        <p class="project-date"><small><strong>Fecha:</strong> 01/05/2019</small></p>
+                        <p class="project-url"><small><strong>Puedes verlo:</strong> www.macautomotriz.com</small></p>
+                        <p class="project-description">Es un aplicativo compuesto por un Portal Web, un Sistema de Administración y una App en Android, que  proporcionará las facilidades necesarias al momento de administrar las citas de los clientes al taller automotriz, en sus matentinimientos predictivo, preventivo, correctivo y recompenzas por su fedelidad y recomendaciones realizadas.</p>
+                        
+                    </div>
+                    <figure class="project-imageContainer">
+                        <img class="project-image" src="images/macapl.png" alt="Imagen del sistema" width="500">
+                    </figure>
+                </article>
+        </div>
+        
     </section>
-    <h2>Mas sobre mi experiencia</h2>
+    <div class="container">
+        <h2 class="exp-title-principal">Mas sobre mi experiencia</h2>
+    </div>
     <section id="experiencia" class="exp-list">
-        <article class="exp">
-            <figure class="exp-imageContainer">
-                <img class="exp-image" src="images/cap.png">
-            </figure>
-            <div class="exp-detail">
-                <h3 class="exp-title">Asistente de Capacitación</h3>
-                <p class="exp-description">En este puesto desarrolle e implementa el campus vistrual de empresa</p>
-                <a class="exp-url" href="http://cap.eppetroecuador.ec" target="_blank">Ver plataforma</a>
-            </div>
-        </article>
-        <article class="exp">
-            <figure class="exp-imageContainer">
-                <img class="exp-image" src="images/cap.png">
-            </figure>
-            <div class="exp-detail">
-                <h3 class="exp-title">Asistente de Capacitación</h3>
-                <p class="exp-description">En este puesto desarrolle e implementa el campus vistrual de empresa</p>
-                <a class="exp-url" href="http://cap.eppetroecuador.ec" target="_blank">Ver plataforma</a>
-            </div>
-        </article>
+        <div class="container">
+            <article class="exp">
+                <figure class="exp-imageContainer">
+                    <img class="exp-image" src="images/cto.png">
+                </figure>
+                <div class="exp-detail">
+                    <h3 class="exp-title">CTO de Dgmsystem APP</h3>
+                    <p class="exp-description">Responsable del departamento tecnológico, informático y técnico el la empresa.</p>
+                    <a class="exp-url" href="https://dguaman.github.io/" target="_blank">Ver Empresa</a>
+                </div>
+            </article>
+            <article class="exp">
+                <figure class="exp-imageContainer">
+                    <img class="exp-image" src="images/afc.png">
+                </figure>
+                <div class="exp-detail">
+                    <h3 class="exp-title">Analista de Formación y Capacitación</h3>
+                    <p class="exp-description">Encargado de la planificación y gestión anual de la Capacitación de la EP PETROECUADOR</p>
+                    <a class="exp-url" href="https://eppetroecuadorenlinea.eppetroecuador.ec" target="_blank">Ver Empresa</a>
+                </div>
+            </article>
+            <article class="exp">
+                    <figure class="exp-imageContainer">
+                        <img class="exp-image" src="images/ada.png">
+                    </figure>
+                    <div class="exp-detail">
+                        <h3 class="exp-title">Asistente de Aplicaciones</h3>
+                        <p class="exp-description">En este puesto desarrolle e implemente sistemas como SISCAP y MOPRO.</p>
+                        <a class="exp-url" href="http://piep.eppetroecuador.ec" target="_blank">Conoce mas ...</a>
+                    </div>
+            </article>
+            <article class="exp">
+                <figure class="exp-imageContainer">
+                    <img class="exp-image" src="images/cap.png">
+                </figure>
+                <div class="exp-detail">
+                    <h3 class="exp-title">Asistente de Comunicaciones</h3>
+                    <p class="exp-description">En este puesto desarrolle e implementa el campus vistrual de empresa</p>
+                    <a class="exp-url" href="http://cap.eppetroecuador.ec" target="_blank">Ver plataforma</a>
+                </div>
+            </article>
+        </div>
     </section>
     <section id="contacto" class="contact">
-        <form action="/suscripcion/" class="form-email">
-            <h3>¿Creamos algo Juntos?</h3>
-            <input type="text" placeholder="Déjame tu email" id="email">
-            <button>Enviar</button>
-        </form>
+        <div class="container">
+            <form action="/suscripcion/" class="form-email">
+                <h3>¿Creamos algo Juntos?</h3>
+                <input type="text" placeholder="Déjame tu email" id="email">
+                <button>Enviar</button>
+            </form>
+            <div class="social">
+                <a href="https://twitter.com/dgmsystem" target="_blank" class="social-link twitter"></a>
+                <a href="https://www.facebook.com/davidmarcelo.guamanmedina.7" target="_blank" class="social-link facebook"></a>
+                <a href="https://github.com/dguaman" target="_blank" class="social-link github"></a>
+                <a href="https://www.instagram.com/dgmsystem/" target="_blank" class="social-link instagram"></a>
+            </div>
+        </div>
     </section>
     <footer class="footer">
-        <div>
-            <p>Todos los derechos reservados a Dgmsystem App <img src="images/logo.png" alt="logo" width="70"></p>
+        <div class="container">
+                <div>
+                        <p>Todos los derechos reservados a Dgmsystem App <img src="images/logo.png" alt="logo" width="70"></p>
+                    </div>
+                    <div>Diseñado por <a href="https://linkedin.com/in/david-marcelo-guamán-medina-ba737754" target="_blank">David Guamán</a></div>
         </div>
-        <div>Diseñado por <a href="linkedin.com/in/david-marcelo-guamán-medina-ba737754">David Guamán</a></div>
     </footer>
 </body>
 </html>
