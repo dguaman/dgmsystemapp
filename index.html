@@ -11,24 +11,24 @@
 </head>
 <body>
     <header class="header">
-        <div>
-            <figure class="logo">
-                <img src="images/logov2.png" alt="Logo de la Empresa" height="150" width="200">
-            </figure>
-            <nav class="menu">
-            <ol>
-                <li>
-                    <a class="link" href="#portafolio">Portafolio</a>
-                </li>
-                <li>
-                    <a class="link" href="#experiencia">Experiencia</a>
-                </li>
-                <li>
-                    <a class="link" href="#contacto">Trabajemos Juntos</a>
-                </li>
-            </ol>
-            </nav>
-        </div>
+        
+        <figure class="logo">
+            <img src="images/logo.png" alt="Logo de la Empresa" width="60">
+        </figure>
+        <nav class="menu">
+        <ol>
+            <li>
+                <a class="link" href="#portafolio">Portafolio</a>
+            </li>
+            <li>
+                <a class="link" href="#experiencia">Experiencia</a>
+            </li>
+            <li>
+                <a class="link" href="#contacto">Trabajemos Juntos</a>
+            </li>
+        </ol>
+        </nav>
+        
     </header>
     <section class="hero">
         <h1>
@@ -36,7 +36,7 @@
         </h1>
         <!-- <img src="images/hero.png" width="500" height="400" alt="Imagen principal del sitio"> -->
     </section>
-    <section id="portafolio" class="portfolio">
+    <section id="portafolio" class="portafolio">
         <h2>Portafolio (Proyectos Destacados)</h2>
         <article class="project">
             <div class="project-separation">
@@ -45,21 +45,47 @@
                 <p class="project-date"><small><strong>Fecha:</strong> 01/04/2019</small></p>
                 <p class="project-url"><small><strong>Puedes verlo:</strong> www.uniondeportiva.club</small></p>
                 <p class="project-description">Es un aplicativo compuesto por un Portal Web, un Sistema de Administración y una App en Android, que  proporcionará las facilidades necesarias al momento de administrar un campeonato de fútbol, debido a que permiten un control y gestión adecuado de las actividades relacionadas en los encuentros deportivos, puntajes y estadísticas generales y especiales.</p>
-                <figure class="project-imageContainer">
-                    <img class="project-image" src="images/futapl.png" alt="Imagen del sistema" width="500">
-                </figure>
+                
             </div>
+            <figure class="project-imageContainer">
+                <img class="project-image" src="images/futapl.png" alt="Imagen del sistema" width="500">
+            </figure>
+        </article>
+        <article class="project">
+            <div class="project-separation">
+                <h3 class="project-title">FUTAPL</h3>
+                <h6 class="project-detail">Aplicación para Campeonatos de fútbol</h6>
+                <p class="project-date"><small><strong>Fecha:</strong> 01/04/2019</small></p>
+                <p class="project-url"><small><strong>Puedes verlo:</strong> www.uniondeportiva.club</small></p>
+                <p class="project-description">Es un aplicativo compuesto por un Portal Web, un Sistema de Administración y una App en Android, que  proporcionará las facilidades necesarias al momento de administrar un campeonato de fútbol, debido a que permiten un control y gestión adecuado de las actividades relacionadas en los encuentros deportivos, puntajes y estadísticas generales y especiales.</p>
+                
+            </div>
+            <figure class="project-imageContainer">
+                <img class="project-image" src="images/futapl.png" alt="Imagen del sistema" width="500">
+            </figure>
         </article>
     </section>
-    <section id="experiencia">
-        <h2>Mas sobre mi experiencia</h2>
+    <h2>Mas sobre mi experiencia</h2>
+    <section id="experiencia" class="exp-list">
         <article class="exp">
             <figure class="exp-imageContainer">
-                <img class="exp-image" src="images/cap.png" width="500">
+                <img class="exp-image" src="images/cap.png">
             </figure>
-            <h3 class="exp-title">Asistente de Capacitación</h3>
-            <p class="exp-description">En este puesto desarrolle e implementa el campus vistrual de empresa</p>
-            <a class="exp-url" href="http://cap.eppetroecuador.ec" target="_blank">Ver plataforma</a>
+            <div class="exp-detail">
+                <h3 class="exp-title">Asistente de Capacitación</h3>
+                <p class="exp-description">En este puesto desarrolle e implementa el campus vistrual de empresa</p>
+                <a class="exp-url" href="http://cap.eppetroecuador.ec" target="_blank">Ver plataforma</a>
+            </div>
+        </article>
+        <article class="exp">
+            <figure class="exp-imageContainer">
+                <img class="exp-image" src="images/cap.png">
+            </figure>
+            <div class="exp-detail">
+                <h3 class="exp-title">Asistente de Capacitación</h3>
+                <p class="exp-description">En este puesto desarrolle e implementa el campus vistrual de empresa</p>
+                <a class="exp-url" href="http://cap.eppetroecuador.ec" target="_blank">Ver plataforma</a>
+            </div>
         </article>
     </section>
     <section id="contacto" class="contact">
@@ -69,6 +95,11 @@
             <button>Enviar</button>
         </form>
     </section>
-    <footer>footer</footer>
+    <footer class="footer">
+        <div>
+            <p>Todos los derechos reservados a Dgmsystem App <img src="images/logo.png" alt="logo" width="70"></p>
+        </div>
+        <div>Diseñado por <a href="linkedin.com/in/david-marcelo-guamán-medina-ba737754">David Guamán</a></div>
+    </footer>
 </body>
 </html>
