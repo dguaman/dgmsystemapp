@@ -235,9 +235,9 @@ figure {
     justify-content: space-between;
 }
 
-.social {
-    /* border: 1px solid red; */
-}
+/* .social {
+    border: 1px solid red;
+} */
 
 .social-link{
     display: inline-block;
