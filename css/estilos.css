@@ -31,7 +31,7 @@ h1 {
 }
 
 .hero {
-  height: 300px;
+  height: 400px;
   /* background-image: url('../images/hero.png'); */
   background-color: #1b2127;
   /* background-size: 500px 300px; */
@@ -321,6 +321,28 @@ figure {
   .container {
     padding: 0 1em;
   }
+
+  .hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 5em;
+  }
+
+  .hero-image {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+    z-index: 2;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -345,13 +367,12 @@ figure {
     text-align: center;
   }
 
-  .hero .container {
-    height: auto;
+  .hero {
+    padding: 3em;
   }
 
-  .hero-image {
-    width: 100%;
-    text-align: center;
+  .hero h1 {
+    font-size: 1.9em;
   }
 
   .project {
@@ -429,12 +450,16 @@ figure {
     margin-bottom: 0;
   }
 
-  body {
+  /* body {
     border: 10px solid green;
-  }
+  } */
 }
 
 @media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.1em;
+  }
+
   .project-separation {
     font-size: 12px;
   }
@@ -446,4 +471,17 @@ figure {
 }
 
 @media screen and (max-width: 320px) {
+  .hero h1 {
+    font-size: 0.78em;
+  }
+
+  .hero {
+    padding: 2em 1em;
+  }
+
+  .social a {
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+  }
 }
