@@ -446,6 +446,7 @@ figure {
     display: block;
     text-align: center;
     border: 1px solid transparent;
+    padding-bottom: 20px;
   }
 
   .footer p {
