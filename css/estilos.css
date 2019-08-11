@@ -83,11 +83,7 @@ h2 {
   align-items: center;
   justify-content: space-between;
   /* border-top-left-radius: 50px; */
-  flex-wrap: wrap;
-}
-
-.project-separation {
-  width: 500px;
+  /* flex-wrap: wrap; */
 }
 
 .project-title {
@@ -110,8 +106,16 @@ h2 {
   font-family: "Fjalla One", sans-serif;
 }
 
+.project-separation {
+  width: 50%;
+}
+
 .project-imageContainer {
-  width: 500px;
+  width: 50%;
+}
+
+.project-imageContainer img {
+  max-width: 100%;
 }
 
 .header {
@@ -188,8 +192,8 @@ figure {
 }
 .exp {
   /* border: 1px solid red; */
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
@@ -314,8 +318,8 @@ figure {
 }
 
 @media screen and (max-width: 1024px) {
-  .project {
-    flex-wrap: nowrap;
+  .container {
+    padding: 0 1em;
   }
 }
 
@@ -341,12 +345,104 @@ figure {
     text-align: center;
   }
 
+  .hero .container {
+    height: auto;
+  }
+
+  .hero-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .project {
+    display: block;
+  }
+
+  .project-imageContainer {
+    width: auto;
+    text-align: center;
+  }
+
+  .project-separation {
+    width: auto;
+    font-size: 16px;
+  }
+
+  .project-detail,
+  .project-date,
+  .project-url {
+    margin: 0.3em 0;
+  }
+
+  .project-title {
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+  }
+
+  .project-url {
+    font-size: 1em;
+  }
+
+  .project-detail {
+    font-size: 0.7em;
+  }
+
+  .project-date {
+    font-size: 1em;
+  }
+
+  .project-description {
+    font-size: 0.8em;
+  }
+
+  .exp {
+    width: auto;
+    flex-shrink: 1;
+  }
+
+  .exp img {
+    width: 100%;
+  }
+
+  .contact {
+    height: auto;
+    padding: 1em 0;
+    text-align: center;
+    display: block;
+  }
+
+  .form-email button {
+    margin: 1em auto;
+  }
+
+  .form-email h3 {
+    margin-top: 0;
+  }
+
+  .footer {
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+
+  .footer p {
+    margin-bottom: 0;
+  }
+
   body {
     border: 10px solid green;
   }
 }
 
 @media screen and (max-width: 480px) {
+  .project-separation {
+    font-size: 12px;
+  }
+
+  .exp-detail {
+    margin: -2em 0.5em 0.5em;
+    padding: 1em;
+  }
 }
 
 @media screen and (max-width: 320px) {
