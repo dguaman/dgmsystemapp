@@ -326,7 +326,7 @@ figure {
     height: auto;
     position: relative;
     overflow: hidden;
-    padding: 5em;
+    padding: 5.3em;
   }
 
   .hero-image {
@@ -340,7 +340,8 @@ figure {
   }
 
   .hero h1 {
-    font-size: 2em;
+    text-shadow: 1px 2px 2px #000;
+    font-size: 2.7em;
     z-index: 2;
   }
 }
@@ -372,6 +373,7 @@ figure {
   }
 
   .hero h1 {
+    text-shadow: 1px 2px 2px #000;
     font-size: 1.9em;
   }
 
@@ -453,6 +455,7 @@ figure {
 
 @media screen and (max-width: 480px) {
   .hero h1 {
+    text-shadow: 1px 2px 2px #000;
     font-size: 1.1em;
   }
 
@@ -468,6 +471,7 @@ figure {
 
 @media screen and (max-width: 320px) {
   .hero h1 {
+    text-shadow: 1px 2px 2px #000;
     font-size: 0.78em;
   }
 
