@@ -15,6 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+    <i id="burger-menu" class="icon-menu burger-button"></i>
     <header class="header">
       <div class="container">
         <figure class="logo">
@@ -26,7 +27,7 @@
               <a class="link" href="#portafolio">Portafolio</a>
             </li>
             <li>
-              <a class="link" href="#experiencia">Experiencia</a>
+              <a class="link" href="#experiencia-title">Experiencia</a>
             </li>
             <li>
               <a class="link" href="#contacto">Trabajemos Juntos</a>
@@ -130,9 +131,11 @@
       </div>
     </section>
     <div class="container">
-      <h2 class="exp-title-principal">Mas sobre mi experiencia</h2>
+      <h2 id="experiencia-title" class="exp-title-principal">
+        Mas sobre mi experiencia
+      </h2>
     </div>
-    <div class="flexible-video">
+    <!-- <div class="flexible-video">
       <iframe
         class="youtube-video"
         width="560"
@@ -142,7 +145,7 @@
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
-    </div>
+    </div> -->
     <section id="experiencia" class="exp-list">
       <div class="container">
         <article class="exp">
@@ -203,8 +206,8 @@
           <div class="exp-detail">
             <h3 class="exp-title">Asistente de Comunicaciones</h3>
             <p class="exp-description">
-              En este puesto desarrolle e implementa el campus vistrual de
-              empresa
+              En este puesto desarrolle e implementa el campus virtual de la EP
+              PETROECUADOR.
             </p>
             <a
               class="exp-url"
@@ -227,22 +230,22 @@
           <a
             href="https://twitter.com/dgmsystem"
             target="_blank"
-            class="social-link twitter"
+            class="social-link icon-twitter"
           ></a>
           <a
             href="https://www.facebook.com/davidmarcelo.guamanmedina.7"
             target="_blank"
-            class="social-link facebook"
+            class="social-link icon-facebook"
           ></a>
           <a
             href="https://github.com/dguaman"
             target="_blank"
-            class="social-link github"
+            class="social-link icon-github"
           ></a>
           <a
             href="https://www.instagram.com/dgmsystem/"
             target="_blank"
-            class="social-link instagram"
+            class="social-link icon-instagram"
           ></a>
         </div>
       </div>
@@ -266,5 +269,36 @@
         </div>
       </div>
     </footer>
+    <script>
+      // console.log('Hola mundo! es mi primera linea en JS');
+      const ipad = window.matchMedia("screen and (max-width: 767.98px)");
+      const menu = document.querySelector(".menu");
+      // console.log(menu);
+      const burgerButton = document.querySelector("#burger-menu");
+      // console.log(burgerButton);
+
+      ipad.addListener(validation);
+
+      function validation(event) {
+        console.log(event.matches);
+        if (event.matches) {
+          burgerButton.addEventListener("click", () =>
+            menu.classList.toggle("is-active")
+          );
+          menu.addEventListener("click", () =>
+            menu.classList.remove("is-active")
+          );
+        } else {
+          burgerButton.removeEventListener("click", () =>
+            menu.classList.toggle("is-active")
+          );
+          menu.removeEventListener("click", () =>
+            menu.classList.remove("is-active")
+          );
+        }
+      }
+
+      validation(ipad);
+    </script>
   </body>
 </html>
